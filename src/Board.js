@@ -2,23 +2,22 @@
 import React from 'react'
 import Square from './Square.js'
 import './index.css'
-import calculateWinner from './CalculateWinner.js'
 class Board extends React.Component {
-  handleClick(i){
-    const history = this.state.history
-    const current = history[history.length - 1]
-    const squares = current.squares.slice()
-     if (calculateWinner(squares) || squares[i]) {
-      return;
-    }
-    squares[i] = this.state.xIsNext ? 'X' : 'O'
-    this.setState({
-      history: history.concat([{
-        squares: squares,
-      }]),
-      xIsNext : !this.state.xIsNext,
-    })
-   }    
+  // handleClick(i){
+  //   const history = this.state.history
+  //   const current = history[history.length - 1]
+  //   const squares = current.squares.slice()
+  //    if (calculateWinner(squares) || squares[i]) {
+  //     return;
+  //   }
+  //   squares[i] = this.state.xIsNext ? 'X' : 'O'
+  //   this.setState({
+  //     history: history.concat([{
+  //       squares: squares,
+  //     }]),
+  //     xIsNext : !this.state.xIsNext,
+  //   })
+  //  }    
   renderSquare (i){
   return (
      <Square

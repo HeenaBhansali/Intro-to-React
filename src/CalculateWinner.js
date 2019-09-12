@@ -1,7 +1,3 @@
-import React from 'react'
-import Square from './Square.js'
-import Board from './Board.js'
-import Game from './Game.js'
 
 function calculateWinner(squares) {
   const lines = [
