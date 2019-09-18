@@ -1,52 +1,61 @@
-body {
-  font: 14px "Century Gothic", Futura, sans-serif;
-  margin: 20px;
-}
-
-ol, ul {
-  padding-left: 30px;
-}
-
-.board-row:after {
-  clear: both;
-  content: "";
-  display: table;
-}
-
-.status {
-  margin-bottom: 10px;
-}
 
 .square {
   background: #fff;
   border: 1px solid #999;
   float: left;
-  font-size: 24px;
+  font-size: 50px;
   font-weight: bold;
-  line-height: 34px;
-  height: 34px;
   margin-right: -1px;
   margin-top: -1px;
   padding: 0;
   text-align: center;
-  width: 34px;
-}
-
-.square:focus {
-  outline: none;
-}
-
-.kbd-navigation .square:focus {
-  background: #ddd;
-}
-
+  width: 80px;
+  line-height: 80px;
+  height: 80px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  background-color: #4b5e6d;
+  margin: 10px;
+  border: 1px solid #304658;
+  border-radius: 5px;
+  text-shadow: 0px -1px 0px rgba(0,0,0,.5);
+  box-shadow: 0px 6px 0px #3d4a53, 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+ 
+ }
+ 
 .game {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: flex;
   flex-direction: row;
-}
-
-.game-info {
+  margin: 0 auto;  
+ }
+ul {
+  padding-left: 30px;
+ }
+ .game-info {
   margin-left: 20px;
-}
-
-
+ }
+ .moveInfo{
+  background-color: #5d7588;
+  color: #fff;
+  border: 1px solid #304658;
+  font-size: 20px;
+  font-weight: bold;
+  width: 200px;
+  /* line-height: 30px; */
+  height: 30px;
+  margin-bottom: 5px;
+ }
+ .list{
+   list-style-type: none;
+ }
+ .status{
+   color :#434e57;
+   margin-left: 40px;
+   font-weight: bold;
+   font-size: 20px;
+ }
